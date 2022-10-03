@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9847d08-19a4-4211-a252-c8e3eb4e8e1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/test/IdMergeInOne/IDsMergeEntry.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/test/IdMergeInOne/IDsMergeFunc.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/test/postProcess/LocalToDatabase.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/test/testUnion.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/cjdb.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/conf/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/increment/IncrMerge.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/merge/IDsMergeMain.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/merge/IdsUnion.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/preprocess/preProcess.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/preProcess/DatabaseToLocal.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/union/HdfsToGauss.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/union/IdUnion.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/utils/FileUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/utils/LocalFileUtils.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +175,7 @@
       <workItem from="1664603390121" duration="62000" />
       <workItem from="1664603552269" duration="3921000" />
       <workItem from="1664683044925" duration="11057000" />
-      <workItem from="1664721232320" duration="33007000" />
+      <workItem from="1664721232320" duration="34208000" />
     </task>
     <servers />
   </component>
