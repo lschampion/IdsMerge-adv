@@ -10,7 +10,7 @@ import java.util.StringTokenizer
 import scala.collection.mutable
 
 /**
- * 把有相同证件id的多条数据融合为1条数据，最终生成的数据在hdfs的{idmergeOutput}/result目录下
+ * 把有相同证件id的多条数据融合为1条数据，最终生成的数据在hdfs的new目录下
  * 生成数据格式 证件id1+空格+证件id2+....
  * idea本地调试参数：tmp_data/preProcess/ tmp_data/merge/ tmp_data/result/ 10
  */

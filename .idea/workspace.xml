@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9847d08-19a4-4211-a252-c8e3eb4e8e1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/postProcess/FilesystemToDatabase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/postProcess/FilesystemToDatabase.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/preProcess/DatabaseToFilesystem.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/preProcess/DatabaseToFilesystem.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/IDsMergeInOne/IDsMergeEntry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/IDsMergeInOne/IDsMergeEntry.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -177,7 +176,7 @@
       <workItem from="1664603390121" duration="62000" />
       <workItem from="1664603552269" duration="3921000" />
       <workItem from="1664683044925" duration="11057000" />
-      <workItem from="1664721232320" duration="37302000" />
+      <workItem from="1664721232320" duration="40443000" />
     </task>
     <servers />
   </component>
