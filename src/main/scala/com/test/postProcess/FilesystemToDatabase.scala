@@ -7,7 +7,7 @@ import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 /**
  * 把IDsMergeEntry生成的数据写入数据库表中
- * idea本地调试参数：tmp_data/result/ conf/test.properties
+ * idea本地调试参数：conf/test.properties tmp_data/result/
  */
 object FilesystemToDatabase {
   def main(args: Array[String]): Unit = {

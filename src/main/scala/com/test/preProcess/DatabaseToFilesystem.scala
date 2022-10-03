@@ -15,7 +15,7 @@ import scala.collection.mutable.Set
  * 读取数据库的数据，把结果放到hdfs（如果使用本地测试则放置在项目目录下）的目录中
  * 生成forMerge目录
  * id：号码1 证件2 号码3 ...
- * idea本地调试参数：conf/test.properties tmp_data/preProcess
+ * idea本地调试参数：conf/test.properties tmp_data/preProcess/
  */
 object DatabaseToFilesystem {
   def main(args: Array[String]): Unit = {
