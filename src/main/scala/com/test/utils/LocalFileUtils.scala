@@ -3,7 +3,7 @@ package com.test.utils
 import java.io.File
 import java.nio.file.Files
 
-object FileUtils {
+object LocalFileUtils {
   //  做本地调试使用，量产环境使用的是hdfs
   def deleteDir(dir: File): Unit = {
     if (!dir.exists()) {
@@ -22,4 +22,5 @@ object FileUtils {
     dir.delete()
     println("delete dir " + dir.getAbsolutePath)
   }
+
 }
