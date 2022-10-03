@@ -1,4 +1,4 @@
-package com.test.IdMergeInOne
+package com.test.IDsMergeInOne
 
 import com.test.utils.{Constants, LocalFileUtils, MD5Util, StringsRandom}
 import org.apache.hadoop.io.compress.GzipCodec

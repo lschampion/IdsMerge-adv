@@ -1,9 +1,9 @@
-package com.test.IdMergeInOne
+package com.test.IDsMergeInOne
 
 import com.test.utils.{Constants, LocalFileUtils}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
-import com.test.IdMergeInOne.IDsMergeFunc
+import com.test.IDsMergeInOne.IDsMergeFunc
 
 import java.io.File
 import java.util.StringTokenizer
@@ -18,10 +18,11 @@ object IDsMergeEntry {
   def main(args: Array[String]): Unit = {
     val incrPath = args(0)
     val idsMergeOutputParent = args(1)
-    val resultPath = args(2)
+    val resultPathParent = args(2)
     val threshold = args(3).toInt
     val incrFiles = incrPath + "forMerge/*.gz"
-    val histFiles = resultPath + "history/*.gz"
+    val histFiles = resultPathParent + "history/*.gz"
+    val newFiles=resultPathParent+"new/"
 
     //    val sc = new SparkContext( new SparkConf().setAppName("IDsMerge"));
     //    测试需要在run configuration
@@ -29,6 +30,8 @@ object IDsMergeEntry {
     val sc = new SparkContext(new SparkConf().setMaster("local[*]").setAppName("IDsMerge")); // 测试代码
     sc.setLogLevel("WARN")
     LocalFileUtils.deleteDir(new File(idsMergeOutputParent))
+    LocalFileUtils.deleteDir(new File(newFiles))
+
     val defaultParallelism = sc.defaultParallelism
 
     val worker = new IDsMergeFunc();
@@ -109,7 +112,7 @@ object IDsMergeEntry {
     //    (10001,Set(3, 0, 8, 5, 2, 13, 11))
     //    (10002,Set(4, 1, 10, 9, 6, 7, 12))
 
-    worker.decodeIds(resultEncodedPreRdd, hmEncodingPreRdd, defaultParallelism, resultPath, threshold)
+    worker.decodeIds(resultEncodedPreRdd, hmEncodingPreRdd, defaultParallelism, resultPathParent, threshold)
     //    val resultDecodingRawRdd = sc.textFile(idsMergeOutputParent + "resultDecoded/*.gz");
     //    println("resultDecodedRawRdd: ")
     //    resultDecodingRawRdd.sortBy(line=>line.split(":")(0),ascending = true,numPartitions = 1).foreach(println)

@@ -1,5 +1,5 @@
-sqlPath="/data/merge/conf/sql.properties"
-outPath="/user/ymadmin/gahq_ryxx/preprocess"
+dataSourceConfigPath="/data/merge/conf/test.properties"
+outPath="/user/test/tmp_data/preProcess/"
 hdfs dfs -rm -r ${outPath}
 
 spark-submit \
@@ -11,4 +11,4 @@ spark-submit \
 --executor-cores 2 \
 --jars /data/merge/lib/jars/ \
 --conf spark.serializer=org.apache.spark.serializer.KryoSerializer \
---class com.mininglamp.preprocess.GahqPreprocess /data/merge/lib/IDsMerge-1.0.jar ${sqlPath} ${outPath}
+--class com.test.preProcess.DatabaseToFilesystem /data/merge/lib/IDsMerge-adv-1.0.jar ${dataSourceConfigPath} ${outPath}

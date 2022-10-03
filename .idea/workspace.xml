@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9847d08-19a4-4211-a252-c8e3eb4e8e1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bash/FilesystemToDatabase.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/hdfsToGauss.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/idmerge.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/IDsMerge.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/idpreprocess.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/DatabaseToFilesystem.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/idunion.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/incr.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/IdMergeInOne/IDsMergeEntry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/IDsMergeInOne/IDsMergeEntry.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/IdMergeInOne/IDsMergeFunc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/IDsMergeInOne/IDsMergeFunc.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/postProcess/LocalToDatabase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/postProcess/FilesystemToDatabase.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/test/preProcess/DatabaseToLocal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/test/preProcess/DatabaseToFilesystem.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +82,11 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/test/IdMergeInOne" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LocalToDatabase">
-    <configuration name="DatabaseToLocal" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.preProcess.DatabaseToLocal" />
+  <component name="RunManager" selected="Application.FilesystemToDatabase">
+    <configuration name="DatabaseToFilesystem" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.preProcess.DatabaseToFilesystem" />
       <module name="IdsMerge-adv" />
-      <option name="PROGRAM_PARAMETERS" value="conf/test.properties tmp_data/preProcess" />
+      <option name="PROGRAM_PARAMETERS" value="conf/test.properties tmp_data/preProcess/" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.test.preProcess.*" />
@@ -86,13 +97,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IDsMergeEntry" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.test.IdMergeInOne.IDsMergeEntry" />
+    <configuration name="FilesystemToDatabase" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.postProcess.FilesystemToDatabase" />
       <module name="IdsMerge-adv" />
-      <option name="PROGRAM_PARAMETERS" value="tmp_data/preProcess/ tmp_data/merge/ tmp_data/result/ 10" />
+      <option name="PROGRAM_PARAMETERS" value="conf/test.properties tmp_data/result/" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.IdMergeInOne.*" />
+          <option name="PATTERN" value="com.test.postProcess.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,13 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalToDatabase" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.postProcess.LocalToDatabase" />
+    <configuration name="IDsMergeEntry" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.test.IDsMergeInOne.IDsMergeEntry" />
       <module name="IdsMerge-adv" />
-      <option name="PROGRAM_PARAMETERS" value="tmp_data/result/ conf/test.properties" />
+      <option name="PROGRAM_PARAMETERS" value="tmp_data/preProcess/ tmp_data/merge/ tmp_data/result/ 10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.postProcess.*" />
+          <option name="PATTERN" value="com.test.IDsMergeInOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,15 +140,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.IDsMergeEntry" />
-      <item itemvalue="Application.DatabaseToLocal" />
-      <item itemvalue="Application.LocalToDatabase" />
+      <item itemvalue="Application.DatabaseToFilesystem" />
+      <item itemvalue="Application.FilesystemToDatabase" />
       <item itemvalue="Application.testUnion" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LocalToDatabase" />
+        <item itemvalue="Application.FilesystemToDatabase" />
+        <item itemvalue="Application.DatabaseToFilesystem" />
         <item itemvalue="Application.testUnion" />
-        <item itemvalue="Application.DatabaseToLocal" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +186,7 @@
       <workItem from="1664603390121" duration="62000" />
       <workItem from="1664603552269" duration="3921000" />
       <workItem from="1664683044925" duration="11057000" />
-      <workItem from="1664721232320" duration="34208000" />
+      <workItem from="1664721232320" duration="36884000" />
     </task>
     <servers />
   </component>

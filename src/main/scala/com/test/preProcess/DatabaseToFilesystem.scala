@@ -17,7 +17,7 @@ import scala.collection.mutable.Set
  * id：号码1 证件2 号码3 ...
  * idea本地调试参数：conf/test.properties tmp_data/preProcess
  */
-object DatabaseToLocal {
+object DatabaseToFilesystem {
   def main(args: Array[String]): Unit = {
     val textFilePath = args(0)
     val hdfsPath = args(1)

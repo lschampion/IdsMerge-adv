@@ -9,13 +9,13 @@ import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
  * 把IDsMergeEntry生成的数据写入数据库表中
  * idea本地调试参数：tmp_data/result/ conf/test.properties
  */
-object LocalToDatabase {
+object FilesystemToDatabase {
   def main(args: Array[String]): Unit = {
     println("args====" + args.mkString(","))
-
-    val resultPath = args(0)
+    val jdbcConfigPath=args(0)
+    val resultPath = args(1)
     val resultFile=resultPath+"new/*.gz"
-    val properties = PropertyUtil.getProperties(args(1))
+    val properties = PropertyUtil.getProperties(jdbcConfigPath)
     println("properties====" + properties)
 
     //    val spark = SparkSession.builder().config(new SparkConf().setAppName("HdfsToGauss")).enableHiveSupport().getOrCreate()
